@@ -12,7 +12,7 @@ main{
     padding: 20px;
 }
 .side{
-    background-color: #e0e0e0;
+    background-color: #f6fbf9;
     margin-left: 214px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -22,7 +22,7 @@ main{
     margin-top: 15px;
 }
 .img{
-    width: 684px;
+    width: 690px;
     border-radius: 10px;
     box-shadow: 0 8px 8px -4px lightblue;
 }
@@ -33,6 +33,9 @@ input{
 }
 .btn{
     margin-left: 180px;
+}
+.amount{
+    display: none;
 }
 
 /* Media query */

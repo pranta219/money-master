@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expenses</title>
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="images/PngItem_33085.png" type="image/x-icon">
     <!-- link stylesheet  -->
     <link rel="stylesheet" href="css/style.css">
     <!-- link boothstrap -->
@@ -18,34 +20,34 @@
 <body>
     <!---------------- header-area-start ---------------->
     <header>
-        <h1 class="head">Monthly Expenses <span class=".text-success"><i
-                    class="fa-solid text-primary fa-hand-holding-dollar"></i></span></h1>
+        <h1 class="head">Monthly Expenses <span class="text-warning"><i class="fa-brands fa-bitcoin"></i></span>
+        </h1>
     </header>
     <!---------------- main-area-start  ------------------>
     <main>
         <section class="container d-flex">
             <div class="col-md-5 half-width">
-                <img class="img" src="images/month.jpg" alt="">
+                <img class="img" src="images/month.png" alt="">
             </div>
             <div class="side col-md-5 half-width">
 
                 <h3 class="text-center">Income</h3>
-                <p class="text-center">Income: <input class="mx-sm-3" type="text"></p>
+                <p class="text-center">Income: <input id="income-field" class="mx-sm-3" type="text"></p>
 
                 <h3 class="text-center">Expenses</h3>
-                <p class="text-center">Food:<input class="mx-sm-3" type="text"></p>
-                <p class="text-center">Rent:<input class="mx-sm-3" type="text"></p>
-                <p class="text-center">Clothes:<input class="mx-sm-3" type="text"></p>
+                <p class="text-center">Food:<input id="food-field" class="mx-sm-3" type="text"></p>
+                <p class="text-center">Rent:<input id="rent-field" class="mx-sm-3" type="text"></p>
+                <p class="text-center">Clothes:<input id="clothes-field" class="mx-sm-3" type="text"></p>
 
-                <button class="btn btn-primary" type="button">Calculate</button>
+                <button id="button" class="btn btn-dark" type="button">Calculate</button>
 
-                <h3 class="text-center">Total Expenses: <span>5000</span></h3>
-                <h3 class="text-center">Balance: <span>4000</span></h3>
-                <p class="text-center">Save: <input class="mx-sm-1" type="text"> % <button class="btn-save btn-primary"
-                        type="button">Save</button></p>
+                <h3 class="amount text-center">Total Expenses: <span>5000</span></h3>
+                <h3 class="amount text-center">Balance: <span>4000</span></h3>
+                <p class="text-center">Save: <input id="save-field" class="mx-sm-1" type="text"> % <button
+                        class="btn-save btn-dark" type="button">Save</button></p>
 
-                <h3 class="text-center">Saving Amount: <span>2000</span></h3>
-                <h3 class="text-center">Remaining Balance: <span>2500</span></h3>
+                <h3 class="amount text-center">Saving Amount: <span>2000</span></h3>
+                <h3 class="amount text-center">Remaining Balance: <span>2500</span></h3>
             </div>
         </section>
 
