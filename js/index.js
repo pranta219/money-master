@@ -21,10 +21,16 @@ inputValue('button').addEventListener('click', function () {
     const expenses = parseFloat(foodAmount) + parseFloat(rentAmount) + parseFloat(clothesAmount)
 
     const newExpenses = inputValue('expenses')
-    newExpenses.innerText = expenses;
+
 
     const totalBalance = incomeAmount - expenses;
-    inputValue('total-amount').innerText = totalBalance;
+    if (expenses <= incomeAmount) {
+        newExpenses.innerText = expenses;
+        inputValue('total-amount').innerText = totalBalance;
+    } else {
+        inputValue('expenses-error').innerText = '❌Expenses Can\'t Be Begger then Income'
+    }
+
 
 })
 
@@ -36,6 +42,13 @@ inputValue('save-btn').addEventListener('click', function () {
     const persentValue = (persenteceInput / 100);
     const savingAmount = income * persentValue;
     const remainingBalance = balance - savingAmount;
-    inputValue('saving-amount').innerText = savingAmount
-    inputValue('remaining-balance').innerText = remainingBalance
+
+    if (balance >= savingAmount) {
+        inputValue('saving-amount').innerText = savingAmount
+        inputValue('remaining-balance').innerText = remainingBalance
+    } else {
+
+        inputValue('saving-error').innerText = '❌Please Insart a Valid Persent'
+    }
+
 })

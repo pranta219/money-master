@@ -8,12 +8,12 @@
     font-size: 50px;
 }
 /* main-area */
-main{
+.container{
     padding: 20px;
 }
 .side{
     background-color: #f6fbf9;
-    margin-left: 214px;
+    margin-left: 150px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 50px;
@@ -31,6 +31,10 @@ input{
     border-radius: 80vw;
     outline: none;
     background: none;
+}
+.error{
+    color: red;
+    text-align: center;
 }
 .btn{
     margin-left: 180px;
