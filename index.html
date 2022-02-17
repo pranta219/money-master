@@ -24,8 +24,8 @@
         </h1>
     </header>
     <!---------------- main-area-start  ------------------>
-    <main>
-        <section class="container d-flex">
+    <main class="container">
+        <section class=" d-flex">
             <div class="col-md-5 half-width">
                 <img class="img" src="images/month.png" alt="">
             </div>
@@ -41,13 +41,14 @@
 
                 <button id="button" class="btn btn-dark" type="button">Calculate</button>
 
-                <h3 class="amount text-center">Total Expenses: <span>5000</span></h3>
-                <h3 class="amount text-center">Balance: <span>4000</span></h3>
-                <p class="text-center">Save: <input id="save-field" class="mx-sm-1" type="text"> % <button
+                <h3 class="amount text-center">Total Expenses: <span id="expenses">00</span></h3>
+                <h3 class="amount text-center">Balance: <span id="total-amount">00</span></h3>
+
+                <p class="text-center">Save: <input id="save-field" class="mx-sm-1" type="text"> % <button id="save-btn"
                         class="btn-save btn-dark" type="button">Save</button></p>
 
-                <h3 class="amount text-center">Saving Amount: <span>2000</span></h3>
-                <h3 class="amount text-center">Remaining Balance: <span>2500</span></h3>
+                <h3 class="amount text-center">Saving Amount: <span id="saving-amount">00</span></h3>
+                <h3 class="amount text-center">Remaining Balance: <span id="remaining-balance">00</span></h3>
             </div>
         </section>
 

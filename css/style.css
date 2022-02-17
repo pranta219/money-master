@@ -4,7 +4,7 @@
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: rgb(111, 189, 103);
+    color: #68A2A9;
     font-size: 50px;
 }
 /* main-area */
@@ -23,6 +23,7 @@ main{
 }
 .img{
     width: 690px;
+    height: 680px;
     border-radius: 10px;
     box-shadow: 0 8px 8px -4px lightblue;
 }
@@ -34,9 +35,6 @@ input{
 .btn{
     margin-left: 180px;
 }
-.amount{
-    display: none;
-}
 
 /* Media query */
 
@@ -44,6 +42,9 @@ input{
 @media only screen and (min-width: 688px) and (max-Width: 992px){
 .container{
     width: 100%;
+}
+.img{
+    width: 590px;
 }
 
 }
